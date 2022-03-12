@@ -1,0 +1,141 @@
+:root {
+  --color-bg: #1a1a1a;
+  --color-text: #cdcdcd;
+  --color-text-accent: #f63356;
+  --color-text-accent-dark: #c72a46;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Quicksand";
+  font-style: normal;
+}
+
+input,
+select {
+  background: none;
+  outline: none;
+  border: none;
+  font-family: "Quicksand";
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 48px;
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: #1a1a1a;
+  color: var(--color-text-accent);
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -10px -10px 20px #202020;
+  font-family: "Quicksand";
+  font-style: normal;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.titulo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.calculadora {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+#calcular {
+  width: 100%;
+  padding: 0.875rem 5rem;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+
+  transition: all 0.2s ease-in;
+}
+
+#calcular:hover {
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.25),
+    inset -10px -10px 20px #202020;
+  color: var(--color-text-accent-dark);
+}
+
+.calc_row {
+  margin: 2.5rem 0;
+  background: var(--color-bg);
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.25),
+    inset -10px -10px 20px #202020;
+  padding: 0.5rem 1.5rem;
+  font-size: 18px;
+  line-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc_row label {
+  color: #747474;
+}
+
+#numero {
+  font-size: 1.125rem;
+}
+
+#unidades {
+  text-align-last: center;
+  appearance: none;
+  color: var(--color-text-accent);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -10px -10px 20px #202020;
+  border-radius: 100px;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.resultado {
+  margin: 2.5rem 0;
+  padding: 1rem;
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.25),
+    inset -10px -10px 20px #202020;
+}
+
+.res-texto {
+  padding: 0.5rem 1.5rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -10px -10px 20px #202020;
+  font-size: 1.25rem;
+}
+
+#resultado {
+  display: block;
+  font-size: 1.5rem;
+}

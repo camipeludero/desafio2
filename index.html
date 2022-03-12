@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="contenido">
+      <div class="header">
+        <h1 class="titulo">Hola!</h1>
+        <p class="subtitulo">Aquí puedes calcular un área fácilmente</p>
+      </div>
+      <div class="calculadora">
+        <form>
+          <div class="calc_row">
+            <label for="valorConocido">Valor conocido:</label>
+
+            <select class="form-select" id="valorConocido">
+              <option selected value="radio">Radio</option>
+              <option value="diametro">Diámetro</option>
+              <option value="longitud">Longitud</option>
+            </select>
+          </div>
+
+          <div class="calc_row">
+            <input
+              type="text"
+              class="form-control"
+              id="numero"
+              placeholder="0"
+            />
+            <select class="form-select" id="unidades">
+              <option selected value="m">m</option>
+              <option value="cm">cm</option>
+              <option value="mm">mm</option>
+              <option value="in">in</option>
+            </select>
+          </div>
+
+          <div>
+            <button type="submit" id="calcular">Calcular</button>
+          </div>
+        </form>
+        <div class="resultado">
+          <div class="res-texto">
+            El área del círculo es: <span id="resultado"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
